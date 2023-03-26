@@ -14,7 +14,6 @@
 
 
 
-
   <link href="/docs/5.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
@@ -76,6 +75,15 @@
       /* all other options */
 
     }
+
+    /* Add this CSS to your existing <style> block */
+    .name-overlay {
+      position: absolute;
+
+      z-index: 10;
+      color: white;
+      /* Change the text color if needed */
+    }
   </style>
 
 
@@ -102,16 +110,21 @@
 
 
     <main class="container ">
-      <div class="p-4 p-md-6 mb-4 rounded text-bg-dark" id="particles-js">
-        <div class="col-md-7 col-sm-8 px-0" id="me">
+      <div class="p-4 p-md-6 mb-4 rounded text-bg-dark " id="particles-js">
+        <div class="name-overlay">
           <h1 class="display-4 fst-italic">Daniel Chastain</h1>
           <hr>
           <p class="lead my-3" id="descriptionInfo">A dynamic computer systems student with a passion for
             designing, developing, and
             maintaining cutting-edge technology solutions.</p>
+        </div>
+        <div>
+
 
         </div>
+
       </div>
+
       <h3 class="pb-4 mb-4 fst-italic border-bottom">Fresh Projects</h3>
 
 
@@ -218,7 +231,6 @@
           </article>
 
           <section id="pt-2">
-            <div class="pt-2"></div>
             <hr>
             <!--Section heading-->
             <h2>Contact</h2>
